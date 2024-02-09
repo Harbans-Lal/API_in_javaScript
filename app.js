@@ -1,5 +1,4 @@
 let curruntPage = 1;
-// console.log('currentPage', curruntPage);
 let pageSize = 6;
 let pagiNation;
 async function get_data(){
@@ -71,7 +70,6 @@ async function renderData(){
 
         //data is getting sort basend on uvalue>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>.
 
-        // const tableHead = document.getElementById('tableHead');
         const tableHead = document.getElementById('tablHeading');
 
         let isAscending  = true;
