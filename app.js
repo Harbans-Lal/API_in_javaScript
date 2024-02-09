@@ -73,22 +73,15 @@ async function renderData(){
         const tableHead = document.getElementById('tablHeading');
 
         let isAscending  = true;
-        let theValue;
         tableHead.addEventListener( 'click', function(event){
             isAscending = !isAscending;
-            theValue = event.target.innerHTML;
-
-            console.log(theValue);
-
             tBody.innerHTML = "";
 
             const toggleData = pagiNation.sort((a,b) =>{
                 if(isAscending){
                     return a.id - b.id;
-                    // return (`a.${theValue} - b.${theValue}`);
                 }else{
                     return b.id - a.id;
-                    // return (`b.${theValue} - a.${theValue} `);
                 }
             })
             curruntPage = 1;
